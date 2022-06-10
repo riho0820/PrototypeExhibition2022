@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "emotion";
+  src: url(font/variemoVF.woff2) format("woff2-variations");
+}
+
+:root {
+  --morp: 0;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Muli", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    sans-serif;
+}
+
+input {
+  font-size: 16px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  height: 10px;
+  width: 100%;
+  background: #cecece;
+  border-radius: 20px;
+  border: solid 3px #dff1ff;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #636363;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  margin: 40px;
+  margin-bottom: 60px;
+  width: 40%;
+}
+
+.desq {
+  margin-bottom: 40px;
+}
+
+.share-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.share-box a {
+  color: #777777;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.buttons button {
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.color {
+  display: flex;
+  margin-right: 20px;
+}
+
+.box-controls {
+  font-size: 20px;
+  display: flex;
+  color: #000;
+  font-weight: bold;
+  vertical-align: middle;
+  flex-direction: column;
+}
+
+.box-controls span {
+  font-size: 20px;
+}
+
+.control {
+  margin-bottom: 40px;
+}
+
+#form-name span {
+  font-size: 16px;
+  margin-left: 5px;
+  color: #777777;
+}
+
+.slider-info {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+}
+
+.slider-info p {
+  margin-bottom: 5px;
+}
+
+#box-emoji {
+  width: 50%;
+  background-color: #3d4392;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 8vw;
+}
+
+#box-emoji p {
+  margin: 0px;
+}
+
+#emoji {
+  font-size: 34vw;
+  font-family: "emotion";
+  font-variation-settings: "morp" var(--morp);
+  color: #ca512f;
+}
+
+@media screen and (max-width: 640px) {
+  input[type="range"] {
+    height: 10px;
+    width: 100%;
+    background: #cecece;
+    border-radius: 20px;
+    border: solid 3px #dff1ff;
+  }
+
+  .control {
+    margin-bottom: 20px;
+  }
+
+  .desq h1 {
+    font-size: 32px;
+  }
+
+  .desq p {
+    font-size: 16px;
+  }
+
+  .color p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    position: relative;
+    display: block;
+  }
+
+  #box-emoji {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 50vw;
+  }
+
+  .main {
+    position: absolute;
+    top: 55vw;
+    width: 85%;
+    margin: 20px;
+    margin-top: 40px;
+  }
+
+  .slider-info {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #form-name span {
+    font-size: 14px;
+  }
+}

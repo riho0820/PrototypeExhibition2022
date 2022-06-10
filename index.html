@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>バリえも</title>
+
+    <meta property="og:title" content="VariEmo" />
+
+    <link rel=" stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="box-emoji">
+        <p id="emoji">AB <hr> CTH</p>
+      </div>
+      <div class="main">
+        <div class="desq">
+          <img src="/img/variemo.png" alt="" width="400" />
+        </div>
+
+        <div class="box-controls">
+          <div class="buttons">
+            <div class="color">
+              <p>icon：</p>
+              <input type="color" name="emoji" id="emocolor" value="#ca512f" />
+            </div>
+            <div class="color">
+              <p>background：</p>
+              <input type="color" name="emoji" id="bgcolor" value="#3d4392" />
+            </div>
+          </div>
+          <div class="control">
+            <div class="slider-info">
+              <p id="form-name">MORP</p>
+              <span class="value" data-index="1"></span>
+            </div>
+            <input
+              type="range"
+              min="000"
+              max="900"
+              value="000"
+              step="10"
+              class="slider"
+              id="morp"
+              data-index="1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
