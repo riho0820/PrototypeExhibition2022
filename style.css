@@ -55,6 +55,7 @@ h1 {
 
 .main {
   margin: 40px;
+  margin-top: 20%;
   margin-bottom: 60px;
   width: 40%;
 }
@@ -93,6 +94,7 @@ h1 {
 }
 
 .box-controls {
+  /* margin-top: 40%; */
   font-size: 20px;
   display: flex;
   color: #000;
@@ -126,7 +128,7 @@ h1 {
 }
 
 #box-emoji {
-  width: 50%;
+  width: 100%;
   background-color: #3d4392;
   vertical-align: middle;
   text-align: center;
@@ -138,10 +140,11 @@ h1 {
 }
 
 #emoji {
-  font-size: 34vw;
+  font-size: 25vw;
   font-family: "emotion";
   font-variation-settings: "morp" var(--morp);
   color: #ca512f;
+  line-height: 1;
 }
 
 @media screen and (max-width: 640px) {
